@@ -24,7 +24,7 @@ public class Inscripcion {
 	
 	// Metods.
 	public boolean aprobada() {
-		if (this.alumno.getMateriasAprobadas().isEmpty()) {
+		if (!this.alumno.getMateriasAprobadas().isEmpty()) {
 			int aciertos = 0;
 			
 			// El problemita de esto es que intenta comprobar, aun sabiendo que algun elemento de materia no cumple...
