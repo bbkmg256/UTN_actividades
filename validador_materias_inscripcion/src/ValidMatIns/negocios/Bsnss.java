@@ -40,7 +40,7 @@ public class Bsnss {
 		while (val) {
 			System.out.print("+ Ingrese una regularidad para la materia " + this.mat.getNombreMateria() +": ");
 			this.mat.setMateriaCorrelativa(new Materia(this.entrada.nextLine()));
-			val = validador();
+			val = this.validador();
 		}
 		
 		// Ingreso datos alumno...
@@ -59,7 +59,7 @@ public class Bsnss {
 		while (val) {
 			System.out.print("Materia " + (k) + ": ");
 			this.alumn.setMateriaAprobada(new Materia(this.entrada.nextLine()));
-			val = validador();
+			val = this.validador();
 			k++;
 		}
 		
